@@ -17,7 +17,5 @@ import com.thwet.eVoucher.model.EVoucher;
  */
 @Repository
 public interface EVoucherRepository extends JpaRepository<EVoucher, Long> {
-	void create(EVoucher eVoucher);
-
 	Optional<EVoucher> findById(Long id);
 }
